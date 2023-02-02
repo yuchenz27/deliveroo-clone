@@ -1,9 +1,9 @@
-import { View, Text, ScrollView } from 'react-native'
-import React from 'react'
-import { ArrowRightIcon } from 'react-native-heroicons/outline'
-import RestaurantCard from './RestaurantCard'
+import { View, Text, ScrollView } from "react-native";
+import React from "react";
+import { ArrowRightIcon } from "react-native-heroicons/outline";
+import RestaurantCard from "./RestaurantCard";
 
-const FeaturedRow = ({id, title, description}) => {
+const FeaturedRow = ({ id, title, description }) => {
   return (
     <View>
       <View className="mt-4 flex-row items-center justify-between px-4">
@@ -17,12 +17,12 @@ const FeaturedRow = ({id, title, description}) => {
         horizontal
         showsHorizontalScrollIndicator={false}
         contentContainerStyle={{
-            paddingHorizontal: 15,
+          paddingHorizontal: 15,
         }}
         className="pt-4"
       >
         {/* RestaurantCards */}
-        <RestaurantCard 
+        <RestaurantCard
           id={0}
           imgUrl="https://links.papareact.com/gn7"
           title="Nando's"
@@ -35,9 +35,34 @@ const FeaturedRow = ({id, title, description}) => {
           lat={456}
         />
 
+        <RestaurantCard
+          id={0}
+          imgUrl="https://links.papareact.com/gn7"
+          title="Nando's"
+          rating={4.5}
+          genre="African"
+          address="123 Main St"
+          short_description="This restaurant is amazing"
+          dishes={[]}
+          long={123}
+          lat={456}
+        />
+
+        <RestaurantCard
+          id={0}
+          imgUrl="https://links.papareact.com/gn7"
+          title="Nando's"
+          rating={4.5}
+          genre="African"
+          address="123 Main St"
+          short_description="This restaurant is amazing"
+          dishes={[]}
+          long={123}
+          lat={456}
+        />
       </ScrollView>
     </View>
-  )
-}
+  );
+};
 
-export default FeaturedRow
+export default FeaturedRow;
